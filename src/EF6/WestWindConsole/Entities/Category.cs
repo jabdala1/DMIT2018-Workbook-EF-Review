@@ -9,7 +9,7 @@ namespace WestWindConsole.Entities
     [Table("Categories", Schema = "dbo")]
     public class Category
     {
-        [Key]
+        [Key] // Indicates that this property maps to the PK in the database
         public int CategoryID { get; set; }
 
         [Required] // Use this for string/varchar columns that are NOT NULL
