@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WestWindConsole.Entities
 {
     // TODO: Begin reviewing entity attributes
-    [Table("Categories")]
+    //Identifies which database table this entity is supposed to represent (be "mapped" to)
+    [Table("Categories", Schema = "dbo")]
     public class Category
     {
         [Key]
