@@ -16,14 +16,14 @@ namespace WestWindConsole.Entities
 
         public DateTime PaymentDate { get; set; }
 
-        public double Amount { get; set; }
+        public decimal Amount { get; set; }
 
         public byte PaymentTypeID { get; set; }
 
         public int OrderID { get; set; }
-
+        [Required]
         public Guid TransactionID { get; set; }
 
-        public DateTime ClearedDate { get; set; }
+        public DateTime? ClearedDate { get; set; }
     }
 }

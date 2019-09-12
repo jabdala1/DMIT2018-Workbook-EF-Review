@@ -14,10 +14,10 @@ namespace WestWindConsole.Entities
         [Key, StringLength(20, ErrorMessage = "Territory ID cannot be longer than 20 letters.")]
         public string TerritoryID { get; set; }
 
-        [StringLength(50, ErrorMessage = "Territory Description is too long.")]
+        [Required, StringLength(50, ErrorMessage = "Territory Description is too long.")]
         public string TerritoryDescription { get; set; }
 
-        [Required]
+        [Key]
         public int RegionID { get; set; }
     }
 }

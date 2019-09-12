@@ -12,9 +12,9 @@ namespace WestWindConsole.Entities
     class Regions
     {
         // Primary Key
-        [Required, Key]
+        [Key]
         public int RegionID { get; set; }
-
+        [Required]
         public string RegionDescription { get; set; }
     }
 }

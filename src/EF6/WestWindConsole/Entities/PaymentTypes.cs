@@ -14,7 +14,7 @@ namespace WestWindConsole.Entities
         [Key]
         public byte PaymentTypeID { get; set; }
 
-        [StringLength(40, ErrorMessage = "Payment type description is too long.")]
+        [Required, StringLength(40, ErrorMessage = "Payment type description is too long.")]
         public string PaymentTypeDescription { get; set; }
     }
 }

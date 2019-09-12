@@ -54,6 +54,7 @@
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\EmployeeTerritories.cs" />
     <Compile Include="Entities\OrderDetail.cs" />
+    <Compile Include="Entities\Orders.cs" />
     <Compile Include="Entities\Payments.cs" />
     <Compile Include="Entities\PaymentTypes.cs" />
     <Compile Include="Entities\Product.cs" />
